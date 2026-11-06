@@ -1,12 +1,8 @@
-/* Điền appUrl bằng URL WEBSITE đã xuất bản (GitHub Pages/Netlify), không phải URL repository. */
+/* Menu order approved by user */
 window.PORTAL_APPS = [
- {name:"Gia phả Nguyễn Đình",desc:"Quản lý thành viên, sơ đồ cây gia phả, lịch giỗ và thông tin dòng họ.",icon:"🌳",category:"Quản trị",tone:"gold",appUrl:"https://nguyendinhkien-giapha.github.io/gia-pha-nguyen-dinh/",github:""},
- {{name:"OANH SƠN HRM",desc:"Quản lý hồ sơ nhân sự, chấm công, tiền lương và KPI.",icon:"♟",category:"Quản trị",tone:"blue",appUrl:"https://nguyendinhkien-giapha.github.io/oanh-son-hrm/",github:""},
- {name:"Quản lý thông tin khách hàng",desc:"Quản lý hồ sơ điểm bán, thông tin khách hàng và dữ liệu kinh doanh.",icon:"♧",category:"Kinh doanh",tone:"violet",appUrl:"",github:""},
- {name:"Hệ thống đặt hàng HABECO",desc:"Quản lý danh mục hàng hóa, lập đơn đặt hàng và theo dõi kế hoạch.",icon:"▣",category:"Kinh doanh",tone:"green",appUrl:"",github:""},
- {name:"Tính điểm ăn sáng",desc:"Ghi nhận điểm, theo dõi kết quả và tổng hợp điểm các thành viên.",icon:"✳",category:"Tiện ích",tone:"orange",appUrl:"",github:""},
- {name:"Vị trí dự phòng 01",desc:"Khu vực dành cho phần mềm mới sẽ được bổ sung sau.",icon:"＋",category:"Dự phòng",tone:"teal",appUrl:"",github:"",reserved:true},
- {name:"Vị trí dự phòng 02",desc:"Khu vực dành cho phần mềm mới sẽ được bổ sung sau.",icon:"＋",category:"Dự phòng",tone:"teal",appUrl:"",github:"",reserved:true},
- {name:"Vị trí dự phòng 03",desc:"Khu vực dành cho phần mềm mới sẽ được bổ sung sau.",icon:"＋",category:"Dự phòng",tone:"teal",appUrl:"",github:"",reserved:true},
- {name:"Vị trí dự phòng 04",desc:"Khu vực dành cho phần mềm mới sẽ được bổ sung sau.",icon:"＋",category:"Dự phòng",tone:"teal",appUrl:"",github:"",reserved:true}
+ {name:"OANH SƠN HRM",desc:"Quản lý nhân sự, chấm công, tiền lương và KPI.",icon:"users",tone:"blue",appUrl:"https://nguyendinhkien-giapha.github.io/oanh-son-hrm/"},
+ {name:"OANH SƠN CRM",desc:"Quản lý thông tin khách hàng và điểm bán.",icon:"handshake",tone:"green",appUrl:"",github:"https://github.com/nguyendinhkien-giapha/oanh-son-crm"},
+ {name:"ORDER HABECO",desc:"Lập đơn đặt hàng và theo dõi kế hoạch kinh doanh.",icon:"package",tone:"gold",appUrl:"https://nguyendinhkien-giapha.github.io/he-thong-dat-hang-habeco/?utm_source=chatgpt.com",github:""},
+ {name:"GIA PHẢ NGUYỄN ĐÌNH",desc:"Quản lý thành viên và thông tin dòng họ.",icon:"tree",tone:"red",appUrl:"https://nguyendinhkien-giapha.github.io/gia-pha-nguyen-dinh/"},
+ {name:"GAME",desc:"Ghi điểm và tổng hợp kết quả các thành viên.",icon:"cards",tone:"purple",appUrl:"",github:"https://github.com/nguyendinhkien-giapha/tinh-diem-an-sang"}
 ];

@@ -3,66 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#142b45">
+<meta name="theme-color" content="#123f78">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Oanh Sơn">
-<title>Cổng thông tin phần mềm Oanh Sơn</title>
+<title>Cổng thông tin Oanh Sơn</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
-<header class="header">
-  <a class="brand" href="./"><<img class="logo-img" src="./Bi%E1%BB%83u%20t%C6%B0%E1%BB%A3ng%20Ph%E1%BA%A7n%20M%E1%BB%81m%20Oanh%20S%C6%A1n.png" alt="Logo Oanh Sơn">><span><b>OANH SƠN</b><small>HỆ THỐNG PHẦN MỀM QUẢN LÝ</small></span></a>
-  <button class="menu-btn" id="menuBtn" aria-label="Mở menu">☰</button>
-  <nav id="nav"><a class="active" href="#home">Trang chủ</a><a href="#apps">Ứng dụng</a><a href="#about">Giới thiệu</a></nav>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="Trang chủ Oanh Sơn">
+    <img src="assets/oanh-son-logo.png" alt="Logo Oanh Sơn">
+  </a>
+  <div class="header-copy">
+    <div class="eyebrow">HỆ THỐNG ỨNG DỤNG NỘI BỘ</div>
+    <h1>CỔNG THÔNG TIN OANH SƠN</h1>
+    <p>Kết nối <i></i> Quản lý <i></i> Đồng bộ <i></i> Hiệu quả</p>
+  </div>
+  <div class="device-mark" aria-hidden="true"><span class="monitor"></span><span class="tablet"></span><span class="phone"></span></div>
 </header>
 <main>
-<section class="hero" id="home">
-  <div class="hero-text">
-    <div class="overline"><i></i>CỔNG THÔNG TIN ĐIỀU HÀNH · OANH SƠN</div>
-    <h1>Không gian quản lý<br><em>tập trung và thông minh.</em></h1>
-    <p>Truy cập nhanh toàn bộ ứng dụng phục vụ công tác quản trị, nhân sự, khách hàng và hoạt động kinh doanh của Oanh Sơn.</p>
-    <a class="hero-cta" href="#apps">Khám phá hệ thống <span>↗</span></a>
-  </div>
-  <div class="hero-visual" aria-hidden="true">
-    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-    <div class="hero-logo">OS<small>WORKSPACE</small></div>
-    <span class="float f1">♙</span><span class="float f2">▤</span><span class="float f3">⌘</span>
-  </div>
-  <div class="hero-bottom"><span>01 CỔNG TRUY CẬP</span><span>05 ỨNG DỤNG CHUYÊN BIỆT</span><span>HOẠT ĐỘNG ĐỘC LẬP</span></div>
-</section>
-
-<section class="metrics">
-  <div><span class="metric-icon">▦</span><span><b id="appCount">05</b><small>PHẦN MỀM</small></span></div>
-  <div><span class="metric-icon">↗</span><span><b id="readyCount">00</b><small>ĐÃ KẾT NỐI</small></span></div>
-  <div><span class="metric-icon">◈</span><span><b>01</b><small>CỔNG ĐIỀU HÀNH</small></span></div>
-</section>
-
-<section class="apps-section" id="apps">
-  <div class="section-head">
-    <div><div class="section-kicker">APPLICATION CENTER</div><h2>Danh sách phần mềm</h2><p>Lựa chọn ứng dụng cần sử dụng. Các hệ thống được triển khai và quản lý riêng biệt.</p></div>
-    <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Tìm kiếm phần mềm..." aria-label="Tìm kiếm phần mềm"></label>
-  </div>
-  <div class="filters" id="filters">
-    <button class="filter active" data-filter="Tất cả">Tất cả</button>
-    <button class="filter" data-filter="Quản trị">Quản trị</button>
-    <button class="filter" data-filter="Kinh doanh">Kinh doanh</button>
-    <button class="filter" data-filter="Tiện ích">Tiện ích</button><button class="filter" data-filter="Dự phòng">Dự phòng</button>
-  </div>
-  <div class="cards" id="cards"></div>
-  <p class="empty" id="empty" hidden>Không tìm thấy phần mềm phù hợp.</p>
-  <div class="legend"><span></span> Trạng thái “Chưa kết nối” sẽ được cập nhật sau khi bổ sung địa chỉ website của ứng dụng.</div>
-</section>
-
-<section class="about" id="about">
-  <div><div class="section-kicker light">ABOUT THE PLATFORM</div><h2>Một cổng thông tin.<br>Toàn bộ công cụ cần thiết.</h2><p>Cổng thông tin giúp tập trung đường dẫn truy cập. Mỗi phần mềm vẫn có website, mã nguồn và dữ liệu riêng; việc cập nhật một ứng dụng không ảnh hưởng đến các ứng dụng khác.</p></div>
-  <div class="about-list">
-    <div><b>01</b><span><strong>Truy cập thuận tiện</strong><small>Mở nhanh các phần mềm từ một địa chỉ.</small></span></div>
-    <div><b>02</b><span><strong>Quản lý độc lập</strong><small>Mỗi ứng dụng có Repository riêng trên GitHub.</small></span></div>
-    <div><b>03</b><span><strong>Tối ưu đa thiết bị</strong><small>Sử dụng trên máy tính, máy tính bảng và iPhone.</small></span></div>
-  </div>
-</section>
-<footer><div class="footer-brand"><img class="logo-img mini" src="assets/oanh-son-logo.png" alt="Logo Oanh Sơn"><b>OANH SƠN</b></div><span>© 2026 Cổng thông tin phần mềm · Quyền tác giả Nguyễn Đình Kiên</span></footer>
+  <section class="portal">
+    <div class="section-heading">
+      <h2>Danh mục phần mềm</h2>
+      <p>Chọn ứng dụng để truy cập</p>
+      <button class="admin-toggle" id="adminToggle" type="button" aria-expanded="false">⚙ QUẢN TRỊ MENU</button>
+    </div>
+    <section class="admin-panel" id="adminPanel" hidden aria-label="Chỉnh sửa danh mục phần mềm">
+      <div class="admin-heading">
+        <div><h2>Quản trị menu ứng dụng</h2><p>Thay tên, mô tả, biểu tượng, màu sắc, đường dẫn và thứ tự hiển thị.</p></div>
+        <button class="admin-close" id="adminClose" type="button" aria-label="Đóng">×</button>
+      </div>
+      <div id="editorRows" class="editor-rows"></div>
+      <div class="admin-actions">
+        <button type="button" class="admin-add" id="addApp">＋ THÊM ỨNG DỤNG</button>
+        <button type="button" class="admin-save" id="saveApps">LƯU THAY ĐỔI</button>
+        <button type="button" class="admin-export" id="exportApps">SAO LƯU JSON</button>
+        <label class="admin-import">KHÔI PHỤC JSON<input type="file" id="importApps" accept=".json,application/json"></label>
+      </div>
+      <p class="admin-note" id="adminNote">Thay đổi được lưu trên trình duyệt và thiết bị hiện tại. Hãy sao lưu JSON để chuyển sang thiết bị khác.</p>
+    </section>
+    <div class="tiles" id="cards" aria-label="Danh sách phần mềm"></div>
+  </section>
 </main>
-<script src="apps.js"></script><script src="app.js"></script>
-</body></html>
+<footer>© 2026 Cổng thông tin Oanh Sơn <span>•</span> Bản quyền thuộc sở hữu bởi Nguyễn Đình Kiên</footer>
+<script src="apps.js?v=12"></script><script src="app.js?v=12"></script>
+</body>
+</html>
