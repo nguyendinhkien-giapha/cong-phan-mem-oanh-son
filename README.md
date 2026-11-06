@@ -18,3 +18,13 @@ Các thẻ có URL sẽ hiện nút **Mở phần mềm**. Các thẻ chưa có 
 GitHub Pages: Settings → Pages → Deploy from a branch → `main` → `/(root)` → Save.
 
 Lưu ý: Cổng chỉ điều hướng, không tự đồng bộ dữ liệu giữa các phần mềm.
+
+
+## Logo Oanh Son v19
+Da cap nhat logo theo tep nguoi dung cung cap cho dau trang, favicon, bieu tuong iPhone (Apple Touch Icon), PWA va anh chia se Zalo (Open Graph). Da tang phien ban cache len v19 de tranh hien logo cu.
+
+
+V22: Giữ nguyên logo do người dùng cung cấp, sử dụng PNG RGBA nền trong suốt cho logo, favicon và biểu tượng iPhone; cập nhật cache lên V22.
+
+
+V23: Cắt bỏ khoảng trong suốt thừa quanh logo để logo hiển thị lớn hơn; tăng vùng logo đầu trang trên desktop và iPhone; giữ nguyên hình và chữ gốc; cache V23.
