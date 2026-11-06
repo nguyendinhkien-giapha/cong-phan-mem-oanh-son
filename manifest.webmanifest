@@ -1,0 +1,9 @@
+{
+  "name": "Cổng thông tin phần mềm Oanh Sơn",
+  "short_name": "Oanh Sơn",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#edf8f6",
+  "theme_color": "#145b5a",
+  "icons": []
+}
