@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap");
 *{box-sizing:border-box}
-:root{font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:#12345b;background:#dff2ff;font-synthesis:none}
-html,body{margin:0;min-height:100%;font-family:"Segoe UI",Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+:root{font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif;color:#12345b;background:#dff2ff;font-synthesis:none}
+html,body{margin:0;min-height:100%;font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
 body{min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;background:radial-gradient(ellipse at 12% 18%,#fff 0,transparent 28%),radial-gradient(ellipse at 88% 30%,#b8e8ff 0,transparent 32%),linear-gradient(135deg,#dff5ff,#a9d9ff 48%,#edfaff);position:relative}
-.site-header{min-height:160px;padding:20px clamp(18px,4vw,64px);display:grid;grid-template-columns:150px 1fr 150px;align-items:center;gap:26px;color:#fff;background:linear-gradient(115deg,#063c88ed,#0759b9e8 55%,#079de0e8);border-bottom:1px solid #ffffff9c;box-shadow:0 12px 32px #07549c30;position:relative;overflow:hidden}
+.site-header{min-height:160px;padding:20px clamp(18px,4vw,64px);display:grid;grid-template-columns:130px 1fr 150px;align-items:center;gap:26px;color:#fff;background:linear-gradient(115deg,#063c88ed,#0759b9e8 55%,#079de0e8);border-bottom:1px solid #ffffff9c;box-shadow:0 12px 32px #07549c30;position:relative;overflow:hidden}
 .site-header:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-64px;height:95px;border-radius:50%;border-top:2px solid #c9f4ffb8;background:linear-gradient(180deg,#c7efff2e,#e6f8ff14)}
-.brand{display:flex;align-items:center;justify-content:center;width:184px;height:138px;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;backdrop-filter:none;z-index:1}
+.brand{display:flex;align-items:center;justify-content:center;width:145px;height:112px;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;backdrop-filter:none;z-index:1}
 .brand img{width:100%;height:100%;object-fit:contain}
 .header-copy{text-align:center;z-index:1}.eyebrow{font-size:11px;font-weight:750;letter-spacing:3px;color:#d7f2ff;margin-bottom:8px}
 .header-copy h1{font-size:clamp(25px,2.7vw,40px);line-height:1.15;letter-spacing:.5px;margin:0;font-weight:850;text-shadow:0 2px 8px #002c6555}
@@ -89,7 +90,7 @@ footer{background:linear-gradient(105deg,#06347d,#0758ae 58%,#06418d);color:#f0f
 .admin-toggle,
 .admin-actions button,
 .admin-import {
-  font-family:"Segoe UI",Tahoma,Arial,sans-serif !important;
+  font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif !important;
   font-kerning:normal;
   font-variant-ligatures:none;
   font-synthesis:none;
@@ -105,20 +106,20 @@ footer{background:linear-gradient(105deg,#06347d,#0758ae 58%,#06418d);color:#f0f
 .editor-row-top{font-weight:600;line-height:1.35}
 .editor-fields label{font-weight:600;line-height:1.35}
 .editor-fields input,.editor-fields select{
-  font-family:"Segoe UI",Tahoma,Arial,sans-serif !important;
+  font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif !important;
   font-size:14px;
   font-weight:400;
   letter-spacing:0;
 }
 .admin-actions button,.admin-import{
-  font-family:"Segoe UI",Tahoma,Arial,sans-serif !important;
+  font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif !important;
   font-size:13px;
   font-weight:700;
   line-height:1.35;
   letter-spacing:0;
   white-space:normal;
 }
-.move-controls button{font-family:"Segoe UI",Tahoma,Arial,sans-serif !important;font-weight:600}
+.move-controls button{font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif !important;font-weight:600}
 
 /* Chừa đủ chiều cao để toàn bộ dòng bản quyền luôn nằm trong màn hình desktop */
 @media (min-width:1101px){
@@ -242,3 +243,7 @@ footer{background:linear-gradient(105deg,#06347d,#0758ae 58%,#06418d);color:#f0f
   .tile { min-height:270px; }
   footer { position:static; }
 }
+
+button,input,select,textarea{font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif}
+
+button,input,select,textarea{font-family:"Be Vietnam Pro",Arial,Helvetica,sans-serif}
