@@ -1,8 +1,11 @@
-# Cổng thông tin Oanh Sơn — V32 tích hợp icon Store
+# Cổng thông tin Oanh Sơn V34 — Sửa lỗi GAME
 
-- Tích hợp biểu tượng Oanh Sơn STORE cho iPhone (Apple Touch Icon 180×180).
-- Cập nhật icon PWA 192×192 và 512×512, favicon 32×32 và 64×64.
-- Tên khi cài lên màn hình chính: Store.
-- Giữ nguyên giao diện và các ứng dụng của bộ V31.
+- Sửa đường dẫn GAME đến ứng dụng Tính điểm ăn sáng.
+- Tự cập nhật đường dẫn GAME trong cấu hình menu cũ lưu ở trình duyệt, tránh tiếp tục dùng đường dẫn sai.
+- Tăng phiên bản tài nguyên lên V34 để trình duyệt tải mã mới.
+- Giữ nguyên giao diện, logo, các ứng dụng và dữ liệu khác.
 
-Triển khai: tải toàn bộ nội dung trong ZIP lên thư mục gốc của repository GitHub Pages.
+## Triển khai
+Tải toàn bộ nội dung trong ZIP lên thư mục gốc repository GitHub Pages của Cổng thông tin Oanh Sơn, ghi đè các tệp cũ.
+
+Đường dẫn GAME được cấu hình: https://nguyendinhkien-giapha.github.io/tinh-diem-an-sang/

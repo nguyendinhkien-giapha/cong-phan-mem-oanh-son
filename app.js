@@ -10,6 +10,9 @@ const icons={
 };
 const defaults=Array.isArray(window.PORTAL_APPS)?window.PORTAL_APPS:[];
 let apps=loadApps();
+// V34: sửa đường dẫn GAME và đồng bộ cả cấu hình cũ đã lưu trong trình duyệt.
+const gameMenu=apps.find(a=>String(a.name||"").trim().toUpperCase()==="GAME");
+if(gameMenu){gameMenu.appUrl="https://nguyendinhkien-giapha.github.io/tinh-diem-an-sang/";try{localStorage.setItem(STORAGE_KEY,JSON.stringify(apps));}catch(e){}}
 // Tự điền link ORDER HABECO nếu trình duyệt đã lưu cấu hình cũ còn để trống.
 const orderMenu=apps.find(a=>String(a.name||"").trim().toUpperCase()==="ORDER HABECO");
 if(orderMenu&&!orderMenu.appUrl)orderMenu.appUrl="https://nguyendinhkien-giapha.github.io/he-thong-dat-hang-habeco/?utm_source=chatgpt.com";
