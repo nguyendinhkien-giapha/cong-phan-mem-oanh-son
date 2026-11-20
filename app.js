@@ -6,13 +6,22 @@ const icons={
  handshake:`<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 24 17 12l12 5 7-2 11-3 12 12-8 9-8-5-9 9c-3 3-7-1-5-4l6-7-7 6c-3 3-7-1-4-4l6-6-8 6c-3 2-7-2-4-5l6-5-8-3-9 9z"/><path d="m17 12-8 9 10 10 8-8m18-11 10 11-8 9-9-7"/></svg>`,
  package:`<svg viewBox="0 0 64 64" aria-hidden="true"><path d="m8 20 24-12 24 12v27L32 59 8 47z"/><path d="m8 20 24 13 24-13M32 33v26M20 14l24 13M44 14 20 27"/></svg>`,
  tree:`<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M29 56V37h7v19M32 8c-8 0-13 7-11 14-8 1-11 12-4 17 3 2 7 2 10 0 2 6 11 8 16 3 7 1 12-5 10-11 5-7 0-16-8-16-2-8-8-12-13-7z"/></svg>`,
- cards:`<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="29" height="40" rx="4" transform="rotate(-12 8 12)"/><rect x="27" y="7" width="29" height="40" rx="4"/><path d="M42 17c-5-6-12 1 0 11 12-10 5-17 0-11z"/><path d="M17 24h8m-4-4v8"/></svg>`
+ cards:`<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="29" height="40" rx="4" transform="rotate(-12 8 12)"/><rect x="27" y="7" width="29" height="40" rx="4"/><path d="M42 17c-5-6-12 1 0 11 12-10 5-17 0-11z"/><path d="M17 24h8m-4-4v8"/></svg>`,
+ check:`<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="25"/><path d="m19 32 9 9 18-20"/></svg>`
 };
 const defaults=Array.isArray(window.PORTAL_APPS)?window.PORTAL_APPS:[];
 let apps=loadApps();
-// V34: sửa đường dẫn GAME và đồng bộ cả cấu hình cũ đã lưu trong trình duyệt.
-const gameMenu=apps.find(a=>String(a.name||"").trim().toUpperCase()==="GAME");
-if(gameMenu){gameMenu.appUrl="https://nguyendinhkien-giapha.github.io/tinh-diem-an-sang/";try{localStorage.setItem(STORAGE_KEY,JSON.stringify(apps));}catch(e){}}
+// Chuyển menu GAME cũ thành KIỂM TRA MỞ MỚI trên cả thiết bị đã lưu cấu hình V33.
+const outletMenu=apps.find(a=>String(a.name||"").trim().toUpperCase()==="GAME" || String(a.github||"").includes("tinh-diem-an-sang"));
+if(outletMenu){
+ outletMenu.name="KIỂM TRA MỞ MỚI";
+ outletMenu.desc="Kiểm tra điểm bán mở mới và trưng bày.";
+ outletMenu.icon="check";
+ outletMenu.tone="purple";
+ outletMenu.appUrl="https://nguyendinhkien-giapha.github.io/check-diem-mo-moi/";
+ delete outletMenu.github;
+ try{localStorage.setItem(STORAGE_KEY,JSON.stringify(apps));}catch(e){}
+}
 // Tự điền link ORDER HABECO nếu trình duyệt đã lưu cấu hình cũ còn để trống.
 const orderMenu=apps.find(a=>String(a.name||"").trim().toUpperCase()==="ORDER HABECO");
 if(orderMenu&&!orderMenu.appUrl)orderMenu.appUrl="https://nguyendinhkien-giapha.github.io/he-thong-dat-hang-habeco/?utm_source=chatgpt.com";
@@ -35,7 +44,7 @@ function render(){
 const panel=document.getElementById("adminPanel");
 const rows=document.getElementById("editorRows");
 const note=document.getElementById("adminNote");
-const iconOptions=[["users","Nhân sự"],["handshake","Bắt tay"],["package","Hộp hàng"],["tree","Cây gia phả"],["cards","Bài / Game"]];
+const iconOptions=[["users","Nhân sự"],["handshake","Bắt tay"],["package","Hộp hàng"],["tree","Cây gia phả"],["cards","Bài / Game"],["check","Dấu kiểm"]];
 const toneOptions=[["blue","Xanh dương"],["green","Xanh lá"],["gold","Vàng"],["red","Đỏ"],["purple","Tím"]];
 function selectOptions(options,value){return options.map(([v,label])=>`<option value="${v}" ${v===value?"selected":""}>${label}</option>`).join("");}
 function renderEditor(){

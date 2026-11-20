@@ -4,5 +4,5 @@ window.PORTAL_APPS = [
  {name:"OANH SƠN CRM",desc:"Quản lý thông tin khách hàng và điểm bán.",icon:"handshake",tone:"green",appUrl:"",github:"https://github.com/nguyendinhkien-giapha/oanh-son-crm"},
  {name:"ORDER HABECO",desc:"Lập đơn đặt hàng và theo dõi kế hoạch kinh doanh.",icon:"package",tone:"gold",appUrl:"https://nguyendinhkien-giapha.github.io/he-thong-dat-hang-habeco/?utm_source=chatgpt.com",github:""},
  {name:"GIA PHẢ NGUYỄN ĐÌNH",desc:"Quản lý thành viên và thông tin dòng họ.",icon:"tree",tone:"red",appUrl:"https://nguyendinhkien-giapha.github.io/gia-pha-nguyen-dinh/"},
- {name:"GAME",desc:"Ghi điểm và tổng hợp kết quả các thành viên.",icon:"cards",tone:"purple",appUrl:"https://nguyendinhkien-giapha.github.io/tinh-diem-an-sang/",github:"https://github.com/nguyendinhkien-giapha/tinh-diem-an-sang"}
+ {name:"KIỂM TRA MỞ MỚI",desc:"Kiểm tra điểm bán mở mới và trưng bày.",icon:"check",tone:"purple",appUrl:"https://nguyendinhkien-giapha.github.io/check-diem-mo-moi/"}
 ];
